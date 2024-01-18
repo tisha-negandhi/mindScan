@@ -1,0 +1,694 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Site keywords here">
+    <meta name="description" content="">
+    <meta name='copyright' content=''>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>MindScan</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href={{url_for('static',filename='img/favicon.png')}}>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+        rel="stylesheet">
+
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href={{url_for('static',filename='css/bootstrap.min.css')}}>
+ <!-- Nice Select CSS -->
+ <link rel="stylesheet" href={{url_for('static',filename='css/nice-select.css')}}>
+ <!-- Font Awesome CSS -->
+ <link rel="stylesheet" href={{url_for('static',filename='css/font-awesome.min.css')}}>
+ <!-- icofont CSS -->
+ <link rel="stylesheet" href={{url_for('static',filename='css/icofont.css')}}>
+ <!-- Slicknav -->
+ <link rel="stylesheet" href={{url_for('static',filename='css/slicknav.min.css')}}>
+ <!-- Owl Carousel CSS -->
+ <link rel="stylesheet" href={{url_for('static',filename='css/owl-carousel.css')}}>
+ <!-- Datepicker CSS -->
+ <link rel="stylesheet" href={{url_for('static',filename='css/datepicker.css')}}>
+ <!-- Animate CSS -->
+ <link rel="stylesheet" href={{url_for('static',filename='css/animate.min.css')}}>
+ <!-- Magnific Popup CSS -->
+ <link rel="stylesheet" href={{url_for('static',filename='css/magnific-popup.css')}}>
+
+ <!-- Medipro CSS -->
+ <link rel="stylesheet" href={{url_for('static',filename='css/normalize.css')}}>
+ <link rel="stylesheet" href={{url_for('static',filename='css/style.css')}}>
+ <link rel="stylesheet" href={{url_for('static',filename='css/responsive.css')}}>
+
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-outter"></div>
+            <div class="loader-inner"></div>
+
+            <div class="indicator">
+                <svg width="16px" height="12px">
+                    <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                    <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <!-- End Preloader -->
+
+    <!-- Get Pro Button -->
+    <!-- <ul class="pro-features">
+			<a class="get-pro" href="#">Get Pro</a>
+			<li class="big-title">Pro Version Available on Themeforest</li>
+			<li class="title">Pro Version Features</li>
+			<li>2+ premade home pages</li>
+			<li>20+ html pages</li>
+			<li>Color Plate With 12+ Colors</li>
+			<li>Sticky Header / Sticky Filters</li>
+			<li>Working Contact Form With Google Map</li>
+			<div class="button">
+				<a href="http://preview.themeforest.net/item/mediplus-medical-and-doctor-html-template/full_screen_preview/26665910?_ga=2.145092285.888558928.1591971968-344530658.1588061879" target="_blank" class="btn">Pro Version Demo</a>
+				<a href="https://themeforest.net/item/mediplus-medical-and-doctor-html-template/26665910" target="_blank" class="btn">Buy Pro Version</a>
+			</div>
+		</ul> -->
+
+    <!-- Header Area -->
+    <header class="header">
+        <!-- Topbar -->
+       <!-- <div class="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-5 col-12">
+                        
+                        <ul class="top-link">
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="login.html">Login/Signup</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                       
+                    </div>
+                    <div class="col-lg-6 col-md-7 col-12">
+                       
+                        <ul class="top-contact">
+                            <li><i class="fa fa-phone"></i>+91 8720944490</li>
+                            <li><i class="fa fa-envelope"></i><a href="mailto:mindscan@gmail.com">mindscan@gmail.com</a>
+                            </li>
+                        </ul>
+                       
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- End Topbar -->
+        <!-- Header Inner -->
+        <div class="header-inner">
+            <div class="container">
+                <div class="inner">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-12">
+                            <!-- Start Logo -->
+                            <div class="logo">
+                                <a href="/"><img src="{{url_for('static',filename='img/logo.png')}}" alt="#"></a>
+                            </div>
+                            <!-- End Logo -->
+                            <!-- Mobile Nav -->
+                            <div class="mobile-nav"></div>
+                            <!-- End Mobile Nav -->
+                        </div>
+                        <div class="col-lg-7 col-md-9 col-12">
+                            <!-- Main Menu -->
+                            <div class="main-menu">
+                                <nav class="navigation">
+                                    <ul class="nav menu">
+
+                                        <li><a href="/">Home </a></li>
+                                        <!-- <li><a href="#">Services </a></li> -->
+                                        <li class="active"><a href="#">Services <i class="icofont-rounded-down"></i></a>
+                                            <ul class="dropdown">
+                                                <li><a href="/bipolar">Bipolar Disorder</a></li>
+                                                <li><a href="/depresl">Depression</a></li>
+                                                <li><a href="/adhd">ADHD</a></li>
+                                                <li><a href="/ptsd">PTSD</a></li>
+                                            </ul>
+                                        </li>
+                                        <!-- <li><a href="#">Pages <i class="icofont-rounded-down"></i></a>
+											<ul class="dropdown">
+												<li><a href="404.html">404 Error</a></li>
+											</ul>
+										</li> -->
+                                        <li><a href="/blog">Blogs </a></li>
+                                        <!-- <ul class="dropdown">
+												<li><a href="blog.html">Blog Details</a></li>
+											</ul> -->
+                                        <li><a href="/contact">Contact Us</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!--/ End Main Menu -->
+                        </div>
+                        <div class="col-lg-2 col-12">
+                            <div class="get-quote">
+                                <a href="/PTSDTest" class="btn">Take the Test</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Header Inner -->
+    </header>
+    <!-- End Header Area -->
+
+    <!-- Slider Area -->
+    <section class="slider">
+        <div class="hero-slider">
+            <!-- Start Single Slider -->
+            <div class="single-slider" style="background-image:url('{{url_for('static',filename='img/slider2.jpg')}}')">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="text">
+                                <h1>Your mental health journey is unique, but you're never alone.</h1>
+                                <p>Whether you're climbing mountains or navigating valleys, there's always support, and
+                                    MindScan is here to help you along the way.</p>
+                                <div class="button">
+                                    <a href="/PTSDTest" class="btn">Take the Test</a>
+                                    <a href="#" class="btn primary">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Single Slider -->
+            <!-- Start Single Slider -->
+            <div class="single-slider" style="background-image:url('{{url_for('static',filename='img/slider.jpg')}}')">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="text">
+                                <h1>Unlock the door to self-discovery and inner peace.</h1>
+                                <p>MindScan is the key to understanding yourself better and finding the path to inner
+                                    peace.</p>
+                                <div class="button">
+                                    <a href="/PTSDTest" class="btn">Take The Test</a>
+                                    <a href="#" class="btn primary">About Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Start End Slider -->
+            <!-- Start Single Slider -->
+            <div class="single-slider" style="background-image:url('{{url_for('static',filename='img/slider3.jpg')}}')">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="text">
+                                <h1>Empower your mind, nurture your soul.</span></h1>
+                                <p>MindScan empowers you to take control of your mental health and nurture your inner
+                                    well-being.</p>
+                                <div class="button">
+                                    <a href="/PTSDTest" class="btn">Take The Test</a>
+                                    <a href="#" class="btn primary">Conatct Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Single Slider -->
+        </div>
+    </section>
+    <!--/ End Slider Area -->
+
+    <!-- Start Schedule Area -->
+    <!-- Start Schedule Area -->
+    <section class="schedule">
+        <div class="container" style="padding-top: 350px;">
+            <div class="schedule-inner">
+                <div class="row">
+                    <div class="col-sm">
+                        <!-- single-schedule -->
+                        <div class="single-schedule">
+                            <div class="inner">
+                                <div class="icon" style="margin-left: -10px;">
+                                    <i class="fa fa-lightbulb-o"
+                                        style="font-size: 400px !important; margin: 50px 50px;"></i>
+                                </div>
+
+                                <div class="single-content">
+                                    <style>
+                                        /* Style for list items */
+                                        .tl {
+                                            list-style-type: none;
+                                            /* Remove default bullets */
+                                        }
+
+                                        .tl li {
+                                            /* margin: 10px 0; */
+                                            /* padding: 10px 0; */
+                                            border-left: 3px solid #ffffff;
+                                            color: #ffffff;
+                                            font-size: 12px;
+                                        }
+                                    </style>
+
+                                    </style>
+                                    <span>PTSD</span>
+                                    <h4>Understanding PTSD</h4>
+                                    <p>PTSD, or Post-Traumatic Stress Disorder, is a mental health condition that can
+                                        develop in individuals who have experienced trauma or extreme stress. Learn more
+                                        about its symptoms and treatment options.</p>
+                                    <h4>What is PTSD?</h4>
+                                    <p>PTSD is a psychological condition that can result from exposure to a traumatic
+                                        event. It can lead to various symptoms and difficulties in daily life. Common
+                                        triggers include combat, accidents, assault, and natural disasters.</p>
+
+                                    <h4>Key Features of PTSD:</h4>
+                                    <ul class="tl" style="padding-top: 15px;">
+                                        <li style="padding-left: 10px;">Recurrent distressing memories or dreams related
+                                            to the traumatic event</li>
+                                        <li style="padding-left: 10px;">Flashbacks and emotional distress when exposed
+                                            to reminders of the trauma</li>
+                                        <li style="padding-left: 10px;">Avoidance of situations that trigger memories of
+                                            the trauma</li>
+                                        <li style="padding-left: 10px;">Negative changes in mood and thoughts</li>
+                                        <li style="padding-left: 10px;">Hyperarousal, including difficulty sleeping and
+                                            heightened irritability</li>
+                                    </ul>
+
+                                    <h4>Causes of PTSD</h4>
+                                    <p>PTSD can develop in response to various traumatic events, such as combat, sexual
+                                        assault, accidents, or natural disasters. The risk of developing PTSD is
+                                        influenced by the severity of the trauma and individual factors.</p>
+
+                                    <h4>Common Symptoms</h4>
+                                    <p>Symptoms of PTSD can vary among individuals, but common signs include:</p>
+                                    <ul class="tl" style="padding-top: 15px;">
+                                        <li style="padding-left: 10px;">Intrusive thoughts and memories of the trauma
+                                        </li>
+                                        <li style="padding-left: 10px;">Avoidance of reminders of the traumatic event
+                                        </li>
+                                        <li style="padding-left: 10px;">Negative changes in mood and thinking</li>
+                                        <li style="padding-left: 10px;">Hyperarousal and increased irritability</li>
+                                        <li style="padding-left: 10px;">Difficulty concentrating and sleeping</li>
+                                    </ul>
+
+                                    <h4>Diagnosis and Treatment</h4>
+                                    <p>Diagnosing PTSD typically involves a clinical evaluation by a mental health
+                                        professional. Treatment often includes psychotherapy, such as
+                                        cognitive-behavioral therapy, and may incorporate medication to manage specific
+                                        symptoms. Therapy can help individuals process and cope with traumatic
+                                        experiences.</p>
+
+                                    <h4>Tips for Managing PTSD</h4>
+                                    <p>Living with PTSD can be challenging, but there are strategies to help manage the
+                                        condition effectively:</p>
+                                    <ul class="tl" style="padding-top: 15px;">
+                                        <li style="padding-left: 10px;">Seek professional help and therapy</li>
+                                        <li style="padding-left: 10px;">Identify and cope with triggers</li>
+                                        <li style="padding-left: 10px;">Engage in relaxation techniques</li>
+                                        <li style="padding-left: 10px;">Build a support network of friends and family
+                                        </li>
+                                        <li style="padding-left: 10px;">Practice self-care and prioritize your
+                                            well-being</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--/End Start schedule Area -->
+
+    <!-- Start Feautes -->
+    <section class="Feautes section">
+        <div class="container" style="padding-top: 730px;">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Here's how you take the test</h2>
+                        <img src="{{url_for('static',filename='img/section-img.png')}}" alt="#">
+                        <p>"At MindScan, we're committed to supporting you and your family on your journey to better
+                            mental health. Our dedicated team is always here to provide guidance, care, and assistance
+                            whenever you need it."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-12">
+                    <!-- Start Single features -->
+                    <div class="single-features">
+                        <div class="signle-icon">
+                            <i class="fa fa-question-circle"></i> <!-- Changed icon to a brain icon -->
+                        </div>
+                        <h3>MCQ Test</h3>
+                        <p>Our advanced system used+s a standard test to comprehensively analyzes your mental health.
+                        </p>
+                    </div>
+                    <!-- End Single features -->
+                </div>
+                <div class="col-lg-4 col-12">
+                    <!-- Start Single features -->
+                    <div class="single-features">
+                        <div class="signle-icon">
+                            <i class="icofont icofont-star"></i> <!-- Changed icon to a nurse icon -->
+                        </div>
+                        <h3>Specialized test</h3>
+                        <p>A specialized and precisely tailored test by the system to have a detailed analysis of your
+                            health</p>
+                    </div>
+                    <!-- End Single features -->
+                </div>
+                <div class="col-lg-4 col-12">
+                    <!-- Start Single features -->
+                    <div class="single-features last">
+                        <div class="signle-icon">
+                            <i class="fa fa-heart"></i> <!-- Changed icon to a support icon -->
+                        </div>
+                        <h3>Counseling & Therapy</h3>
+                        <p>Expert guidance and therapy for improved well-being, tailored to your unique mental health
+                            needs.</p>
+                    </div>
+                    <!-- End Single features -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="call-action overlay" data-stellar-background-ratio="0.5"
+        style="background-image:url('{{url_for('static',filename='img/testi-bg.jpg')}}');">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <div class="content">
+                        <h2>Take The Test</h2>
+                        <p>In compliance with our website's diagnostic protocols, individuals are encouraged to take the
+                            standardized test determined by our system to assess and monitor their mental health status
+                            effectively</p>
+                        <div class="button">
+                            <a href="tel:+123456789" class="btn">Take The Test</a>
+                            <a href="#" class="btn second">Contact Us<i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start Blog Area -->
+    <section class="blog section" id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Stay Informed with the Latest Mental Health Insights</h2>
+                        <img src="{{url_for('static',filename='img/section-img.png')}}" alt="#">
+                        <p>Explore our blog for the most up-to-date information on mental health and well-being.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Single Blog -->
+                    <div class="single-news">
+                        <div class="news-head">
+                            <img src="{{url_for('static',filename='img/blog1.jpg')}}" alt="#">
+                        </div>
+                        <div class="news-body">
+                            <div class="news-content">
+                                <div class="date">22 Aug, 2020</div>
+                                <h2><a href="/blog">Understanding Stress and Its Impact on Mental Health</a>
+                                </h2>
+                                <p class="text">Explore the relationship between stress and mental well-being.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Blog -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Single Blog -->
+                    <div class="single-news">
+                        <div class="news-head">
+                            <img src="{{url_for('static',filename='img/blog2.jpg')}}" alt="#">
+                        </div>
+                        <div class="news-body">
+                            <div class="news-content">
+                                <div class="date">15 Jul, 2020</div>
+                                <h2><a href="/blog">Coping Strategies for Anxiety and Depression</a></h2>
+                                <p class="text">Learn effective ways to manage anxiety and depression for better mental
+                                    health.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Blog -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Single Blog -->
+                    <div class="single-news">
+                        <div class="news-head">
+                            <img src="{{url_for('static',filename='img/blog3.jpg')}}" alt="#">
+                        </div>
+                        <div class="news-body">
+                            <div class="news-content">
+                                <div class="date">05 Jan, 2020</div>
+                                <h2><a href="/blog">Building Resilience and Emotional Well-Being</a></h2>
+                                <p class="text">Explore ways to enhance your emotional well-being and build resilience.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Blog -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Blog Area -->
+
+    <!-- Start clients -->
+    <div class="clients overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <div class="owl-carousel clients-slider">
+                        <div class="single-clients">
+							<img src="{{url_for('static',filename='img/client1.png')}}" alt="#">
+						</div>
+						<div class="single-clients">
+							<img src="{{url_for('static',filename='img/client2.png')}}" alt="#">
+						</div>
+						<div class="single-clients">
+							<img src="{{url_for('static',filename='img/client3.png')}}" alt="#">
+						</div>
+						<div class="single-clients">
+							<img src="{{url_for('static',filename='img/client4.png')}}" alt="#">
+						</div>
+						<div class="single-clients">
+							<img src="{{url_for('static',filename='img/client5.png')}}" alt="#">
+						</div>
+						<div class="single-clients">
+							<img src="{{url_for('static',filename='img/client1.png')}}" alt="#">
+						</div>
+						<div class="single-clients">
+							<img src="{{url_for('static',filename='img/client2.png')}}" alt="#">
+						</div>
+						<div class="single-clients">
+							<img src="{{url_for('static',filename='img/client3.png')}}" alt="#">
+						</div>
+						<div class="single-clients">
+							<img src="{{url_for('static',filename='img/client4.png')}}" alt="#">
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Ens clients -->
+
+
+    <!-- Start Newsletter Area -->
+    <section class="newsletter section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <!-- Start Newsletter Form -->
+                    <div class="subscribe-text">
+                        <h6>Subscribe for Our Latest Updates by Email</h6>
+                        <p>Stay informed with our news and updates. Sign up now!</p>
+                    </div>
+                    <!-- End Newsletter Form -->
+                </div>
+                <div class="col-lg-6 col-12">
+                    <!-- Start Newsletter Form -->
+                    <div class="subscribe-form">
+                        <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+                            <input name="EMAIL" placeholder="Your email address" class="common-input"
+                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'"
+                                required="" type="email">
+                            <button class="btn">Subscribe</button>
+                        </form>
+                    </div>
+                    <!-- End Newsletter Form -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- /End Newsletter Area -->
+
+    <!-- Footer Area -->
+    <footer id="footer" class="footer">
+        <!-- Footer Top -->
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class="single-footer">
+                            <h2>About Us</h2>
+                            <p>Welcome to our website. We are dedicated to providing top-notch services and solutions
+                                for your needs.</p>
+                            <!-- Social -->
+                            <ul class="social">
+                                <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                                <li><a href="#"><i class="icofont-google-plus"></i></a></li>
+                                <li><a href="#"><i class="icofont-twitter"></i></a></li>
+                                <li><a href="#"><i class="icofont-vimeo"></i></a></li>
+                                <li><a href="#"><i class="icofont-pinterest"></i></a></li>
+                            </ul>
+                            <!-- End Social -->
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class="single-footer f-link">
+                            <h2>Quick Links</h2>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <ul>
+                                        <li><a href="/"><i class="fa fa-caret-right"
+                                                    aria-hidden="true"></i>Home</a>
+                                        </li>
+                                        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a>
+                                        </li>
+                                        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a>
+                                        </li>
+                                        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Blogs</a>
+                                        </li>
+                                        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Other
+                                                Links</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-caret-right"
+                                                    aria-hidden="true"></i>Counseling</a></li>
+                                        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact
+                                                Us</a>
+                                        </li>
+                                        <!-- <li><a href="#"><i class="fa fa-caret-right"
+													aria-hidden="true"></i>Testimonials</a></li>
+										<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a></li>
+										<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class="single-footer">
+                            <h2>Newsletter</h2>
+                            <p>Subscribe to our newsletter to receive the latest news and updates in your inbox. Stay
+                                informed about our services and offerings.</p>
+                            <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+                                <input name="email" placeholder="Email Address" class="common-input"
+                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'"
+                                    required="" type="email">
+                                <button class="button"><i class="icofont icofont-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Footer Top -->
+        <!-- Copyright -->
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-12">
+                        <div class="copyright-content">
+                            <p>
+                            <div class="logo">
+                                <a href="/"><img src="{{url_for('static',filename='img/logo.png')}}" alt="Your Logo"></a>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Copyright -->
+    </footer>
+
+    <!--/ End Footer Area -->
+ <!-- jquery Min JS -->
+ <script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+ <!-- jquery Migrate JS -->
+ <script src="{{url_for('static',filename='js/jquery-migrate-3.0.0.js')}}"></script>
+ <!-- jquery Ui JS -->
+ <script src="{{url_for('static',filename='js/jquery-ui.min.js')}}"></script>
+ <!-- Easing JS -->
+ <script src="{{url_for('static',filename='js/easing.js')}}"></script>
+ <!-- Color JS -->
+ <script src="{{url_for('static',filename='js/colors.js')}}"></script>
+ <!-- Popper JS -->
+ <script src="{{url_for('static',filename='js/popper.min.js')}}"></script>
+ <!-- Bootstrap Datepicker JS -->
+ <script src="{{url_for('static',filename='js/bootstrap-datepicker.js')}}"></script>
+ <!-- Jquery Nav JS -->
+ <script src="{{url_for('static',filename='js/jquery.nav.js')}}"></script>
+ <!-- Slicknav JS -->
+ <script src="{{url_for('static',filename='js/slicknav.min.js')}}"></script>
+ <!-- ScrollUp JS -->
+ <script src="{{url_for('static',filename='js/jquery.scrollUp.min.js')}}"></script>
+ <!-- Niceselect JS -->
+ <script src="{{url_for('static',filename='js/niceselect.js')}}"></script>
+ <!-- Tilt Jquery JS -->
+ <script src="{{url_for('static',filename='js/tilt.jquery.min.js')}}"></script>
+ <!-- Owl Carousel JS -->
+ <script src="{{url_for('static',filename='js/owl-carousel.js')}}"></script>
+ <!-- counterup JS -->
+ <script src="{{url_for('static',filename='js/jquery.counterup.min.js')}}"></script>
+ <!-- Steller JS -->
+ <script src="{{url_for('static',filename='js/steller.js')}}"></script>
+ <!-- Wow JS -->
+ <script src="{{url_for('static',filename='js/wow.min.js')}}"></script>
+ <!-- Magnific Popup JS -->
+ <script src="{{url_for('static',filename='js/jquery.magnific-popup.min.js')}}"></script>
+ <!-- Counter Up CDN JS -->
+ <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+ <!-- Bootstrap JS -->
+ <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+ <!-- Main JS -->
+ <script src="{{url_for('static',filename='js/main.js')}}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1254 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Site keywords here">
+    <meta name="description" content="">
+    <meta name='copyright' content=''>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>MindScan</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href={{url_for('static',filename='img/favicon.png')}}>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+        rel="stylesheet">
+    <!-- Add this in the head section of your HTML file -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+    <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href={{url_for('static',filename='css/bootstrap.min.css')}}>
+ <!-- Nice Select CSS -->
+ <link rel="stylesheet" href={{url_for('static',filename='css/nice-select.css')}}>
+ <!-- Font Awesome CSS -->
+ <link rel="stylesheet" href={{url_for('static',filename='css/font-awesome.min.css')}}>
+ <!-- icofont CSS -->
+ <link rel="stylesheet" href={{url_for('static',filename='css/icofont.css')}}>
+ <!-- Slicknav -->
+ <link rel="stylesheet" href={{url_for('static',filename='css/slicknav.min.css')}}>
+ <!-- Owl Carousel CSS -->
+ <link rel="stylesheet" href={{url_for('static',filename='css/owl-carousel.css')}}>
+ <!-- Datepicker CSS -->
+ <link rel="stylesheet" href={{url_for('static',filename='css/datepicker.css')}}>
+ <!-- Animate CSS -->
+ <link rel="stylesheet" href={{url_for('static',filename='css/animate.min.css')}}>
+ <!-- Magnific Popup CSS -->
+ <link rel="stylesheet" href={{url_for('static',filename='css/magnific-popup.css')}}>
+
+ <!-- Medipro CSS -->
+ <link rel="stylesheet" href={{url_for('static',filename='css/normalize.css')}}>
+ <link rel="stylesheet" href={{url_for('static',filename='css/style.css')}}>
+ <link rel="stylesheet" href={{url_for('static',filename='css/responsive.css')}}>
+
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-outter"></div>
+            <div class="loader-inner"></div>
+
+            <div class="indicator">
+                <svg width="16px" height="12px">
+                    <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                    <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <!-- End Preloader -->
+
+    <!-- Get Pro Button -->
+    <!-- <ul class="pro-features">
+			<a class="get-pro" href="#">Get Pro</a>
+			<li class="big-title">Pro Version Available on Themeforest</li>
+			<li class="title">Pro Version Features</li>
+			<li>2+ premade home pages</li>
+			<li>20+ html pages</li>
+			<li>Color Plate With 12+ Colors</li>
+			<li>Sticky Header / Sticky Filters</li>
+			<li>Working Contact Form With Google Map</li>
+			<div class="button">
+				<a href="http://preview.themeforest.net/item/mediplus-medical-and-doctor-html-template/full_screen_preview/26665910?_ga=2.145092285.888558928.1591971968-344530658.1588061879" target="_blank" class="btn">Pro Version Demo</a>
+				<a href="https://themeforest.net/item/mediplus-medical-and-doctor-html-template/26665910" target="_blank" class="btn">Buy Pro Version</a>
+			</div>
+		</ul> -->
+
+    <!-- Header Area -->
+    <!-- Header Area -->
+    <header class="header">
+        <!-- Topbar -->
+       <!-- <div class="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-5 col-12">
+                       
+                        <ul class="top-link">
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="login.html">Login/Signup</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                        
+                    </div>
+                    <div class="col-lg-6 col-md-7 col-12">
+                       
+                        <ul class="top-contact">
+                            <li><i class="fa fa-phone"></i>+91 8720944490</li>
+                            <li><i class="fa fa-envelope"></i><a href="mailto:mindscan@gmail.com">mindscan@gmail.com</a>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- End Topbar -->
+        <!-- Header Inner -->
+        <div class="header-inner">
+            <div class="container">
+                <div class="inner">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-12">
+                            <!-- Start Logo -->
+                            <div class="logo">
+                                <a href="/"><img src="{{url_for('static',filename='img/logo.png')}}" alt="#"></a>
+                            </div>
+                            <!-- End Logo -->
+                            <!-- Mobile Nav -->
+                            <div class="mobile-nav"></div>
+                            <!-- End Mobile Nav -->
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-12">
+                            <!-- Main Menu -->
+                            <div class="main-menu">
+                                <nav class="navigation">
+                                    <ul class="nav menu">
+
+                                        <li class><a href="/">Home </a></li>
+                                        <li><a href="#">Services <i class="icofont-rounded-down"></i></a>
+                                            <ul class="dropdown">
+                                                <li><a href="/bipolar">Bipolar Disorder</a></li>
+                                                <li><a href="/depres">Depression</a></li>
+                                                <li><a href="/adhd">ADHD</a></li>
+                                                <li><a href="/ptsd">PTSD</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href=""  data-bs-toggle="modal" data-bs-target="#exampleModalCenter27">Clinics </i></a>
+											<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+											integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+											crossorigin="anonymous"></script>
+									
+											<div class="modal fade" id="exampleModalCenter27" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+												  <div class="modal-content">
+													<div class="modal-header">
+													  <h5 class="modal-title" id="exampleModalLongTitle">Enter your location</h5>
+													  <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													  </button>
+													</div>
+													<div class="modal-body">
+													<form action="/clinics" method="post">
+														<div class="form-group">
+															<label style="color: black">Please provide the location to locate nearby clinics.</label><br>
+															<label style="color: black">Location:</label>
+															<input type="text" class="form-control" id="location" name="location" required>
+													</div>
+													<div class="modal-footer">
+													  <button type="submit" class="btn btn-primary">Search</button>
+													</div>
+													</div>
+													</form>
+												  </div>
+												</div>
+											  </div>
+                                        <!-- <li><a href="#">Pages <i class="icofont-rounded-down"></i></a>
+											<ul class="dropdown">
+												<li><a href="404.html">404 Error</a></li>
+											</ul>
+										</li> -->
+                                        <li><a href="/blogs">Blogs </i></a>
+                                            <!-- <ul class="dropdown">
+												<li><a href="blog-single.html">Blog Details</a></li>
+											</ul> -->
+                                        </li>
+                                        <li><a href="/contact">Contact Us</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!--/ End Main Menu -->
+                        </div>
+                        <!-- <div class="col-lg-2 col-12">
+							<div class="get-quote">
+								<a href="appointment.html" class="btn">Take the Test</a>
+							</div>
+						</div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Header Inner -->
+    </header>
+    <!-- End Header Area -->
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs overlay">
+        <div class="container">
+            <div class="bread-inner">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Take The Test</h2>
+                        <ul class="bread-list">
+                            <li><a href="/">Home</a></li>
+                            <li><i class="icofont-simple-right"></i></li>
+                            <li><a href="/bipolar">Bipolar Disorder</a></li>
+                            <li><i class="icofont-simple-right"></i></li>
+                            <li class="active">Objective Test</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumbs -->
+    <!-- <section class="schedule">
+        <div class="container">
+            <div class="schedule-inner">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="single-schedule">
+                            <div class="inner">
+                                <div class="icon">
+                                    <i class="fa fa-lightbulb-o"></i>
+                                </div>
+                                <div class="single-content">
+                                    <span>Bipolar Disorder</span>
+                                    <h4>Understanding Bipolar Disorder</h4>
+                                    <p>Bipolar Disorder, formerly known as manic depression, is a mental health
+                                        condition characterized by extreme mood swings. Learn more about its symptoms
+                                        and treatment options.</p>
+                                    <a href="bipolar.html">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <style>
+        .schedule {
+            display:block;
+            position: static;
+            height: auto;
+            padding-top: 30px;
+        }
+
+        .schedule .schedule-inner {
+            transform: none;
+        }
+
+        .schedule .single-schedule {
+            background-color: #a5c2df;
+        }
+
+        .schedule .single-schedule:before {
+            background: #a5c2df;
+        }
+
+        .options {
+            position: relative;
+            padding-left: 40px;
+        }
+
+        #options label {
+            display: block;
+            margin-bottom: 15px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .options input {
+            opacity: 0;
+        }
+
+        .checkmark {
+            position: absolute;
+            margin: 0;
+            top: 0;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+        }
+
+        .options input:checked~.checkmark:after {
+            display: block;
+        }
+
+        .options .checkmark:after {
+            content: "";
+            width: 10px;
+            height: 10px;
+            display: block;
+            background: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border-radius: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            transition: 100ms ease-in-out 0s;
+        }
+
+        .options input[type="radio"]:checked~.checkmark {
+            background: #1A76D1;
+            transition: 100ms ease-in-out 0s;
+        }
+
+        .options input[type="radio"]:checked~.checkmark:after {
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .slider {
+            -webkit-appearance: none;
+            width: 95%;
+            height: 15px;
+            border-radius: 5px;  
+            background: #d3d3d3;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+          }
+          
+          .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%; 
+            background: #1A76D1;
+            cursor: pointer;
+          }
+          
+          .slider::-moz-range-thumb {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: #1A76D1;
+            cursor: pointer;
+          }
+          
+    </style>
+    <form action="/cal1" method="post">
+    <section class="schedule">
+        <div class="container">
+            <div class="schedule-inner">
+                <div class="row">
+                    <div class="col-sm">
+                        <!-- single-schedule -->
+                        <div class="single-schedule">
+                            <div class="inner">
+                                <!-- <div class="icon" style="margin-left: -10px;">
+                                    <i class="fa fa-lightbulb-o"
+                                        style="font-size: 400px !important; margin: 50px 50px;"></i>
+                                </div> -->
+
+                                <div class="single-content">
+                                    <span>Question 1</span>
+                                    <h4>Depressed Mood</h4>
+                                    <p>
+                                        <div class="slidecontainer">
+                                        <input type="range" min="0" max="4" value="2" name="q1" class="slider" id="Q1">
+                                        <label  style="font-size: 20px; color: #ffffff; padding: 0 10px;" id="q1">2</label>
+                                        </div>
+                                        <script>
+                                            var slider = document.getElementById("Q1");
+                                            var output1 = document.getElementById("q1");
+                                    
+                                            output1.innerHTML = slider.value; // Display the default slider value
+                                    
+                                            slider.oninput = function() {
+                                                output1.innerHTML = this.value;
+                                            };
+                                        </script>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="schedule">
+        <div class="container">
+            <div class="schedule-inner">
+                <div class="row">
+                    <div class="col-sm">
+                        <!-- single-schedule -->
+                        <div class="single-schedule">
+                            <div class="inner">
+                                <!-- <div class="icon" style="margin-left: -10px;">
+                                    <i class="fa fa-lightbulb-o"
+                                        style="font-size: 400px !important; margin: 50px 50px;"></i>
+                                </div> -->
+
+                                <div class="single-content">
+                                    <span>Question 2</span>
+                                    <h4>Feelings of Guilt</h4>
+                                    <p>
+                                        <div class="slidecontainer">
+                                            <input type="range" min="0" max="4" value="2" name="q2" class="slider" id="Q2">
+                                            <label  style="font-size: 20px; color: #ffffff; padding: 0 10px;" id="q2">2</label>
+                                        </div>  
+                                        <script>
+            var slider = document.getElementById("Q2");
+            var output2 = document.getElementById("q2");
+    
+            output2.innerHTML = slider.value; // Display the default slider value
+    
+            slider.oninput = function() {
+                output2.innerHTML = this.value;
+            };
+        </script> </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="schedule">
+        <div class="container" >
+            <div class="schedule-inner">
+                <div class="row">
+                    <div class="col-sm">
+                        <!-- single-schedule -->
+                        <div class="single-schedule">
+                            <div class="inner">
+                                <!-- <div class="icon" style="margin-left: -10px;">
+                                    <i class="fa fa-lightbulb-o"
+                                        style="font-size: 400px !important; margin: 50px 50px;"></i>
+                                </div> -->
+
+                                <div class="single-content">
+                                    <span>Question 3</span>
+                                    <h4>Suicide</h4>
+                                    <p>
+                                        <div class="slidecontainer">
+                                            <input type="range" min="0" max="4" value="2" name="q3" class="slider" id="Q3">
+                                            <label  style="font-size: 20px; color: #ffffff; padding: 0 10px;" id="q3">2</label>
+                                        </div> 
+                                       
+        <script>
+            var slider = document.getElementById("Q3");
+            var output3 = document.getElementById("q3");
+    
+            output3.innerHTML = slider.value; // Display the default slider value
+    
+            slider.oninput = function() {
+                output3.innerHTML = this.value;
+            };
+        </script>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="schedule">
+        <div class="container" >
+            <div class="schedule-inner">
+                <div class="row">
+                    <div class="col-sm">
+                        <!-- single-schedule -->
+                        <div class="single-schedule">
+                            <div class="inner">
+                                <!-- <div class="icon" style="margin-left: -10px;">
+                                    <i class="fa fa-lightbulb-o"
+                                        style="font-size: 400px !important; margin: 50px 50px;"></i>
+                                </div> -->
+
+                                <div class="single-content">
+                                    <span>Question 4</span>
+                                    <h4>Insomnia - Early</h4>
+                                    <p>
+                                        <div class="slidecontainer">
+                                            <input type="range" min="0" max="4" value="2" name="q4" class="slider" id="Q4">
+                                            <label  style="font-size: 20px; color: #ffffff; padding: 0 10px;" id="q4">2</label>
+                                        </div>
+        <script>
+            var slider = document.getElementById("Q4");
+            var output4 = document.getElementById("q4");
+    
+            output4.innerHTML = slider.value; // Display the default slider value
+    
+            slider.oninput = function() {
+                output4.innerHTML = this.value;
+            };
+        </script>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="schedule">
+        <div class="container" >
+            <div class="schedule-inner">
+                <div class="row">
+                    <div class="col-sm">
+                        <!-- single-schedule -->
+                        <div class="single-schedule">
+                            <div class="inner">
+                                <!-- <div class="icon" style="margin-left: -10px;">
+                                    <i class="fa fa-lightbulb-o"
+                                        style="font-size: 400px !important; margin: 50px 50px;"></i>
+                                </div> -->
+
+                                <div class="single-content">
+                                    <span>Question 5</span>
+                                    <h4>Insomnia - Middle</h4>
+                                    <p>
+                                        <div class="slidecontainer">
+                                            <input type="range" min="0" max="4" value="2" name="q5" class="slider" id="Q5">
+                                            <label  style="font-size: 20px; color: #ffffff; padding: 0 10px;" id="q5">2</label>
+                                        </div> 
+        <script>
+            var slider = document.getElementById("Q5");
+            var output5 = document.getElementById("q5");
+    
+            output5.innerHTML = slider.value; // Display the default slider value
+    
+            slider.oninput = function() {
+                output5.innerHTML = this.value;
+            };
+        </script>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="schedule">
+        <div class="container" >
+            <div class="schedule-inner">
+                <div class="row">
+                    <div class="col-sm">
+                        <!-- single-schedule -->
+                        <div class="single-schedule">
+                            <div class="inner">
+                                <!-- <div class="icon" style="margin-left: -10px;">
+                                    <i class="fa fa-lightbulb-o"
+                                        style="font-size: 400px !important; margin: 50px 50px;"></i>
+                                </div> -->
+
+                                <div class="single-content">
+                                    <span>Question 6</span>
+                                    <h4>Insomnia - Late</h4>
+                                    <p>
+                                        <div class="slidecontainer">
+                                            <input type="range" min="0" max="4" value="2" name="q6" class="slider" id="Q6">
+                                            <label  style="font-size: 20px; color: #ffffff; padding: 0 10px;" id="q6">2</label>
+                                        </div> 
+        <script>
+            var slider = document.getElementById("Q6");
+            var output6 = document.getElementById("q6");
+    
+            output6.innerHTML = slider.value; // Display the default slider value
+    
+            slider.oninput = function() {
+                output6.innerHTML = this.value;
+            };
+        </script>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="schedule">
+        <div class="container" >
+            <div class="schedule-inner">
+                <div class="row">
+                    <div class="col-sm">
+                        <!-- single-schedule -->
+                        <div class="single-schedule">
+                            <div class="inner">
+                                <!-- <div class="icon" style="margin-left: -10px;">
+                                    <i class="fa fa-lightbulb-o"
+                                        style="font-size: 400px !important; margin: 50px 50px;"></i>
+                                </div> -->
+
+                                <div class="single-content">
+                                    <span>Question 7</span>
+                                    <h4>Work and Activities</h4>
+                                    <p>
+                                        <div class="slidecontainer">
+                                            <input type="range" min="0" max="4" value="2" name="q7" class="slider" id="Q7">
+                                            <label  style="font-size: 20px; color: #ffffff; padding: 0 10px;" id="q7">2</label>
+                                        </div> 
+        <script>
+            var slider = document.getElementById("Q7");
+            var output7 = document.getElementById("q7");
+    
+            output7.innerHTML = slider.value; // Display the default slider value
+    
+            slider.oninput = function() {
+                output7.innerHTML = this.value;
+            };
+        </script>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="schedule">
+        <div class="container" >
+            <div class="schedule-inner">
+                <div class="row">
+                    <div class="col-sm">
+                        <!-- single-schedule -->
+                        <div class="single-schedule">
+                            <div class="inner">
+                                <!-- <div class="icon" style="margin-left: -10px;">
+                                    <i class="fa fa-lightbulb-o"
+                                        style="font-size: 400px !important; margin: 50px 50px;"></i>
+                                </div> -->
+
+                                <div class="single-content">
+                                    <span>Question 8</span>
+                                    <h4>Retardation</h4>
+                                    <p>
+                                        <div class="slidecontainer">
+                                            <input type="range" min="0" max="4" value="2" name="q8" class="slider" id="Q8">
+                                            <label  style="font-size: 20px; color: #ffffff; padding: 0 10px;" id="q8"></label>
+                                        </div> 
+        <script>
+            var slider = document.getElementById("Q8");
+            var output8 = document.getElementById("q8");
+    
+            output8.innerHTML = slider.value; // Display the default slider value
+    
+            slider.oninput = function() {
+                output8.innerHTML = this.value;
+            };
+        </script>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="schedule">
+        <div class="container" >
+            <div class="schedule-inner">
+                <div class="row">
+                    <div class="col-sm">
+                        <!-- single-schedule -->
+                        <div class="single-schedule">
+                            <div class="inner">
+                                <!-- <div class="icon" style="margin-left: -10px;">
+                                    <i class="fa fa-lightbulb-o"
+                                        style="font-size: 400px !important; margin: 50px 50px;"></i>
+                                </div> -->
+
+                                <div class="single-content">
+                                    <span>Question 9</span>
+                                    <h4>Agitation</h4>
+                                    <p>
+                                        <div class="slidecontainer">
+                                            <input type="range" min="0" max="4" value="2" name="q9" class="slider" id="Q9">
+                                            <label  style="font-size: 20px; color: #ffffff; padding: 0 10px;" id="q9">2</label>
+                                        </div> 
+        <script>
+            var slider = document.getElementById("Q9");
+            var output9 = document.getElementById("q9");
+    
+            output9.innerHTML = slider.value; // Display the default slider value
+    
+            slider.oninput = function() {
+                output9.innerHTML = this.value;
+            };
+        </script>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="schedule">
+        <div class="container" >
+            <div class="schedule-inner">
+                <div class="row">
+                    <div class="col-sm">
+                        <!-- single-schedule -->
+                        <div class="single-schedule">
+                            <div class="inner">
+                                <!-- <div class="icon" style="margin-left: -10px;">
+                                    <i class="fa fa-lightbulb-o"
+                                        style="font-size: 400px !important; margin: 50px 50px;"></i>
+                                </div> -->
+
+                                <div class="single-content">
+                                    <span>Question 10</span>
+                                    <h4>Anxiety - Psychological</h4>
+                                    <p>
+                                        <div class="slidecontainer">
+                                            <input type="range" min="0" max="4" value="2" name="q10" class="slider" id="Q10">
+                                            <label  style="font-size: 20px; color: #ffffff; padding: 0 10px;" id="q10"></label>
+                                        </div> 
+        <script>
+            var slider = document.getElementById("Q10");
+            var output10 = document.getElementById("q10");
+    
+            output10.innerHTML = slider.value; // Display the default slider value
+    
+            slider.oninput = function() {
+                output10.innerHTML = this.value;
+            };
+        </script></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="schedule">
+        <div class="container">
+            <div class="schedule-inner">
+                <div class="row">
+                    <div class="col-sm">
+                        <!-- single-schedule -->
+                        <div class="single-schedule">
+                            <div class="inner">
+                                <!-- <div class="icon" style="margin-left: -10px;">
+                                    <i class="fa fa-lightbulb-o"
+                                        style="font-size: 400px !important; margin: 50px 50px;"></i>
+                                </div> -->
+
+                                <div class="single-content">
+                                    <span>Question 11</span>
+                                    <h4>Anxiety - Somatic</h4>
+                                    <p>
+                                        <div class="slidecontainer">
+                                            <input type="range" min="0" max="4" value="2" name="q11" class="slider" id="Q11">
+                                            <label  style="font-size: 20px; color: #ffffff; padding: 0 10px;" id="q11"></label>
+                                        </div> 
+        <script>
+            var slider = document.getElementById("Q11");
+            var output = document.getElementById("q11");
+    
+            output.innerHTML = slider.value; // Display the default slider value
+    
+            slider.oninput = function() {
+                output.innerHTML = this.value;
+            };
+        </script>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="schedule">
+        <div class="container">
+            <div class="schedule-inner">
+                <div class="row">
+                    <div class="col-sm">
+                        <!-- single-schedule -->
+                        <div class="single-schedule">
+                            <div class="inner">
+                                <!-- <div class="icon" style="margin-left: -10px;">
+                                    <i class="fa fa-lightbulb-o"
+                                        style="font-size: 400px !important; margin: 50px 50px;"></i>
+                                </div> -->
+
+                                <div class="single-content">
+                                    <span>Question 12</span>
+                                    <h4>Somatic Symptoms - Gastrointestinal</h4>
+                                    <p>
+                                        <div class="slidecontainer">
+                                            <input type="range" min="0" max="4" value="2" name="q12" class="slider" id="Q12">
+                                            <label  style="font-size: 20px; color: #ffffff; padding: 0 10px;" id="q12"></label>
+                                        </div> 
+        <script>
+            var slider = document.getElementById("Q12");
+            var output = document.getElementById("q12");
+    
+            output.innerHTML = slider.value; // Display the default slider value
+    
+            slider.oninput = function() {
+                output.innerHTML = this.value;
+            };
+        </script>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="schedule">
+        <div class="container">
+            <div class="schedule-inner">
+                <div class="row">
+                    <div class="col-sm">
+                        <!-- single-schedule -->
+                        <div class="single-schedule">
+                            <div class="inner">
+                                <!-- <div class="icon" style="margin-left: -10px;">
+                                    <i class="fa fa-lightbulb-o"
+                                        style="font-size: 400px !important; margin: 50px 50px;"></i>
+                                </div> -->
+
+                                <div class="single-content">
+                                    <span>Question 13</span>
+                                    <h4>Somatic Symptoms - General</h4>
+                                    <p>
+                                        <div class="slidecontainer">
+                                            <input type="range" min="0" max="4" value="2" name="q13" class="slider" id="Q13">
+                                            <label  style="font-size: 20px; color: #ffffff; padding: 0 10px;" id="q13"></label>
+                                        </div> 
+        <script>
+            var slider = document.getElementById("Q13");
+            var output = document.getElementById("q13");
+    
+            output.innerHTML = slider.value; // Display the default slider value
+    
+            slider.oninput = function() {
+                output.innerHTML = this.value;
+            };
+        </script>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="schedule">
+        <div class="container">
+            <div class="schedule-inner">
+                <div class="row">
+                    <div class="col-sm">
+                        <!-- single-schedule -->
+                        <div class="single-schedule">
+                            <div class="inner">
+                                <!-- <div class="icon" style="margin-left: -10px;">
+                                    <i class="fa fa-lightbulb-o"
+                                        style="font-size: 400px !important; margin: 50px 50px;"></i>
+                                </div> -->
+
+                                <div class="single-content">
+                                    <span>Question 14</span>
+                                    <h4>Genital Symptoms</h4>
+                                    <p>
+                                        <div class="slidecontainer">
+                                            <input type="range" min="0" max="4" value="2" name="q14" class="slider" id="Q14">
+                                            <label  style="font-size: 20px; color: #ffffff; padding: 0 10px;" id="q14"></label>
+                                        </div> 
+        <script>
+            var slider = document.getElementById("Q14");
+            var output = document.getElementById("q14");
+    
+            output.innerHTML = slider.value; // Display the default slider value
+    
+            slider.oninput = function() {
+                output.innerHTML = this.value;
+            };
+        </script>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="schedule">
+        <div class="container">
+            <div class="schedule-inner">
+                <div class="row">
+                    <div class="col-sm">
+                        <!-- single-schedule -->
+                        <div class="single-schedule">
+                            <div class="inner">
+                                <!-- <div class="icon" style="margin-left: -10px;">
+                                    <i class="fa fa-lightbulb-o"
+                                        style="font-size: 400px !important; margin: 50px 50px;"></i>
+                                </div> -->
+
+                                <div class="single-content">
+                                    <span>Question 15</span>
+                                    <h4>Hypochondriasis</h4>
+                                    <p>
+                                        <div class="slidecontainer">
+                                            <input type="range" min="0" max="4" value="2" name="q15" class="slider" id="Q15">
+                                            <label  style="font-size: 20px; color: #ffffff; padding: 0 10px;" id="q15"></label>
+                                        </div> 
+        <script>
+            var slider = document.getElementById("Q15");
+            var output = document.getElementById("q15");
+    
+            output.innerHTML = slider.value; // Display the default slider value
+    
+            slider.oninput = function() {
+                output.innerHTML = this.value;
+            };
+        </script>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="schedule">
+        <div class="container">
+            <div class="schedule-inner">
+                <div class="row">
+                    <div class="col-sm">
+                        <!-- single-schedule -->
+                        <div class="single-schedule">
+                            <div class="inner">
+                                <!-- <div class="icon" style="margin-left: -10px;">
+                                    <i class="fa fa-lightbulb-o"
+                                        style="font-size: 400px !important; margin: 50px 50px;"></i>
+                                </div> -->
+
+                                <div class="single-content">
+                                    <span>Question 16</span>
+                                    <h4>Weight Loss</h4>
+                                    <p>
+                                        <div class="slidecontainer">
+                                            <input type="range" min="0" max="4" value="2" name="q16" class="slider" id="Q16">
+                                            <label  style="font-size: 20px; color: #ffffff; padding: 0 10px;" id="q16"></label>
+                                        </div> 
+        <script>
+            var slider = document.getElementById("Q16");
+            var output = document.getElementById("q16");
+    
+            output.innerHTML = slider.value; // Display the default slider value
+    
+            slider.oninput = function() {
+                output.innerHTML = this.value;
+            };
+        </script>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="col-lg" style="padding-top: 40px;">
+        <div class="get-quote">
+            <button class="btn" style="width: 100%;" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Submit</button>
+        </div>
+    </div>
+</form>
+{% if score %}
+{% if score >= 20  %}
+        <div class="modal" id="scoreModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Assessment Results</h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Thank you for taking the standard test.</p>
+                
+                    <p>These results suggest the presence of depressive symptoms. Consult with a mental health professional for further evaluation.</p>
+                
+                    </div>
+                    <div class="modal-footer">
+                  <button type="button" class="btn btn-primary"><a href="/therapy">Counseling sessions</a></button>
+                  <button type="button" class="btn btn-primary"><a href="/">Advanced Test</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Trigger the modal using jQuery -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#scoreModal').modal('show');
+            });
+        </script>
+        {% else %}
+        <div class="modal" id="scoreModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Assessment Results</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Thank you for taking the standard test.</p>
+                   
+                    <p>These results do not necessarily indicate depressive symptoms, but it's important to consider a professional evaluation.</p>
+                
+                    </div>
+                    <div class="modal-footer">
+                  <button type="button" class="btn btn-primary"><a href="/therapy">Counseling sessions</a></button>
+                  <button type="button" class="btn btn-primary"><a href="/">Advanced Test</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trigger the modal using jQuery -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#scoreModal').modal('show');
+            });
+        </script>
+        {% endif %}
+        {% endif %}
+   <!--  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Your Score</h5>
+                  <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <p>Thank you for taking the standard test. Here is your score:</p>
+                    <div class="score-container">
+                        <span class="score-label">Your Score:</span>
+                        <span class="score">9 / 10</span>
+                    </div>
+                    <p>Great job! You're almost there. Consider taking the advanced test for an even better experience.</p>
+                
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Take Advanced Test</button>
+                </div>
+              </div>
+            </div>
+          </div>-->
+
+
+    <!-- Footer Area -->
+    <footer id="footer" class="footer" style="padding-top: 40px;">
+        <!-- Footer Top -->
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class="single-footer">
+                            <h2>About Us</h2>
+                            <p>Welcome to our website. We are dedicated to providing top-notch services and solutions
+                                for your needs.</p>
+                            <!-- Social -->
+                            <ul class="social">
+                                <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                                <li><a href="#"><i class="icofont-google-plus"></i></a></li>
+                                <li><a href="#"><i class="icofont-twitter"></i></a></li>
+                                <li><a href="#"><i class="icofont-vimeo"></i></a></li>
+                                <li><a href="#"><i class="icofont-pinterest"></i></a></li>
+                            </ul>
+                            <!-- End Social -->
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class="single-footer f-link">
+                            <h2>Quick Links</h2>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <ul>
+                                        <li><a href="/"><i class="fa fa-caret-right"
+                                                    aria-hidden="true"></i>Home</a>
+                                        </li>
+                                        <li><a href="/about"><i class="fa fa-caret-right"
+                                                    aria-hidden="true"></i>About Us</a>
+                                        </li>
+                                        <li><a href="/"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a>
+                                        </li>
+                                        <li><a href="/blogs"><i class="fa fa-caret-right"
+                                                    aria-hidden="true"></i>Blogs</a></li>
+                                        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Other
+                                                Links</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <ul>
+                                        <li><a href="/therapy"><i class="fa fa-caret-right"
+                                                    aria-hidden="true"></i>Counseling</a></li>
+                                        <li><a href="/contact"><i class="fa fa-caret-right"
+                                                    aria-hidden="true"></i>Contact Us</a>
+                                        </li>
+                                        <!-- <li><a href="#"><i class="fa fa-caret-right"
+													aria-hidden="true"></i>Testimonials</a></li>
+										<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a></li>
+										<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class="single-footer">
+                            <h2>Newsletter</h2>
+                            <p>Subscribe to our newsletter to receive the latest news and updates in your inbox. Stay
+                                informed about our services and offerings.</p>
+                            <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+                                <input name="email" placeholder="Email Address" class="common-input"
+                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'"
+                                    required="" type="email">
+                                <button class="button"><i class="icofont icofont-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Footer Top -->
+        <!-- Copyright -->
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-12">
+                        <div class="copyright-content">
+                            <p>
+                            <div class="logo">
+                                <a href="/"><img src="{{url_for('static',filename='img/logo.png')}}" alt="Your Logo"></a>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Copyright -->
+    </footer>
+    <!--/ End Footer Area -->
+
+    <!-- jquery Min JS -->
+	<script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+	<!-- jquery Migrate JS -->
+	<script src="{{url_for('static',filename='js/jquery-migrate-3.0.0.js')}}"></script>
+	<!-- jquery Ui JS -->
+	<script src="{{url_for('static',filename='js/jquery-ui.min.js')}}"></script>
+	<!-- Easing JS -->
+	<script src="{{url_for('static',filename='js/easing.js')}}"></script>
+	<!-- Color JS -->
+	<script src="{{url_for('static',filename='js/colors.js')}}"></script>
+	<!-- Popper JS -->
+	<script src="{{url_for('static',filename='js/popper.min.js')}}"></script>
+	<!-- Bootstrap Datepicker JS -->
+	<script src="{{url_for('static',filename='js/bootstrap-datepicker.js')}}"></script>
+	<!-- Jquery Nav JS -->
+	<script src="{{url_for('static',filename='js/jquery.nav.js')}}"></script>
+	<!-- Slicknav JS -->
+	<script src="{{url_for('static',filename='js/slicknav.min.js')}}"></script>
+	<!-- ScrollUp JS -->
+	<script src="{{url_for('static',filename='js/jquery.scrollUp.min.js')}}"></script>
+	<!-- Niceselect JS -->
+	<script src="{{url_for('static',filename='js/niceselect.js')}}"></script>
+	<!-- Tilt Jquery JS -->
+	<script src="{{url_for('static',filename='js/tilt.jquery.min.js')}}"></script>
+	<!-- Owl Carousel JS -->
+	<script src="{{url_for('static',filename='js/owl-carousel.js')}}"></script>
+	<!-- counterup JS -->
+	<script src="{{url_for('static',filename='js/jquery.counterup.min.js')}}"></script>
+	<!-- Steller JS -->
+	<script src="{{url_for('static',filename='js/steller.js')}}"></script>
+	<!-- Wow JS -->
+	<script src="{{url_for('static',filename='js/wow.min.js')}}"></script>
+	<!-- Magnific Popup JS -->
+	<script src="{{url_for('static',filename='js/jquery.magnific-popup.min.js')}}"></script>
+	<!-- Counter Up CDN JS -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+	<!-- Main JS -->
+	<script src="{{url_for('static',filename='js/main.js')}}"></script>
+
+</body>
+
+</html>
